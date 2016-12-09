@@ -1,0 +1,5 @@
+﻿  Game.cpp
+c:\chili framework 2016\engine\game.cpp(140): warning C4552: '+': operator has no effect; expected operator with side-effect
+c:\chili framework 2016\engine\game.cpp(144): warning C4552: '+': operator has no effect; expected operator with side-effect
+  Engine.vcxproj -> C:\Chili Framework 2016\Debug\Engine.exe
+  Engine.vcxproj -> C:\Chili Framework 2016\Debug\Engine.pdb (Partial PDB)
