@@ -22,7 +22,7 @@
 #include "Game.h"
 #include "TestHead.h"
 #include "PlayerIcon.h"
-
+#include "Graphics.h"
 Game::Game(MainWindow& wnd)
 	:
 	wnd(wnd),
@@ -41,7 +41,8 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
-	PlayerIcon::PlayerIcon(Graphics&gfx, int GetX, int GetY, int GetColour, int GetPlayerNum);
+	PlayerIcon::PlayerIcon(defaultX, defaultY, defaultColour, 1);
+	PlayerIcon::DrawBox();
 }
 
 
