@@ -34,10 +34,6 @@ public:
 private:
 	void ComposeFrame();
 	void UpdateModel();
-	void DrawBox(int GetPlayerX, int GetPlayerY,int colour, int PlayerNumber);
-	int SetBoundaryX(int GetLocX);
-	int SetBoundaryY(int GetLocY);
-	void Control(int PlayerLocX, int PlayerLocY, int GrabPlayerNumber);
 	void Fire(int GetLocX,int GetLocY,int GetPlayerNum);
 	//void Control2(int PlayerLocX, int PlayerLocY, int PlayerNumber);
 	/********************************/
@@ -52,6 +48,7 @@ private:
 	int gb2 = 100;
 	int defaultX2 = 100;
 	int defaultY2 = 100;
+	int defaultColour = 100;
 	int P1Colour = 0;
 	int P2Colour = 255;
 	int shotFiredX = 0;

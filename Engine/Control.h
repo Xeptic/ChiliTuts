@@ -4,7 +4,7 @@
 class Control
 {
 public:
-	Control(Keyboard &wnd,int GetControlX,int GetControlY,int PlayerNum);
+	Control(int GetControlX,int GetControlY,int PlayerNum);
 	void KeyPresses();
 	int SetBoundaryX(int PosX);
 	int SetBoundaryY(int PosY);
@@ -12,5 +12,6 @@ private:
 	int CoPlayerX;
 	int CoPlayerY;
 	int CoPlayerNum;
+	Keyboard wnd;
 };
 

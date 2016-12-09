@@ -1,10 +1,11 @@
 #include "Control.h"
 #include "Keyboard.h"
 #include "Graphics.h"
+#include "Fire.h"
 
 
 
-Control::Control(Keyboard &wnd,int PlayerLocX, int PlayerLocY, int GrabPlayerNumber)
+Control::Control(int PlayerLocX, int PlayerLocY, int GrabPlayerNumber)
 {
 	int CoPlayerX = PlayerLocX;
 	int CoPlayerY= PlayerLocY;
