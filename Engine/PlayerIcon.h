@@ -7,16 +7,17 @@
 class PlayerIcon
 {
 public:
-	PlayerIcon(int GetX, int GetY, int Colour, int GetPlayerNum);
-	void DrawBox();
+	PlayerIcon();
+	void GetDeets(int GetX, int GetY, int Colour, int GetPlayerNum);
+	void DrawBox(Graphics& gfx);
 
 private:
-	Graphics gfx;
 	int gb1 = 100;
 	int gb2=100;
 	int PlayerX;
 	int PlayerY;
 	int PlayerNum;
 	int GetColour;
+	Control ConOb;
 };
 

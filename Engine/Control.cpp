@@ -5,49 +5,61 @@
 
 
 
-Control::Control(int PlayerLocX, int PlayerLocY, int GrabPlayerNumber)
+Control::Control()
 {
+
+}
+
+void Control::GetDeets(int PlayerLocX, int PlayerLocY, int GrabPlayerNumber)
+{
+
 	int CoPlayerX = PlayerLocX;
-	int CoPlayerY= PlayerLocY;
-	int CoPlayerNum= GrabPlayerNumber;
+	int CoPlayerY = PlayerLocY;
+	int CoPlayerNum = GrabPlayerNumber;
+}
+
+
+void Control::KeyPress(Keyboard&kbd)
+{
+
 	{
 		if (CoPlayerNum = 1)
 		{
-			if (wnd.KeyIsPressed(VK_UP)) {
+			if (KeyOb.KeyIsPressed(VK_UP)) {
 				CoPlayerY = CoPlayerY - 1;
 			}
-			if (wnd.KeyIsPressed(VK_DOWN)) {
+			if (KeyOb.KeyIsPressed(VK_DOWN)) {
 				CoPlayerY = CoPlayerY + 1;
 			}
-			if (wnd.KeyIsPressed(VK_LEFT)) {
+			if (KeyOb.KeyIsPressed(VK_LEFT)) {
 				CoPlayerX = CoPlayerX - 1;
 			}
-			if (wnd.KeyIsPressed(VK_RIGHT)) {
+			if (KeyOb.KeyIsPressed(VK_RIGHT)) {
 				CoPlayerX = CoPlayerX + 1;
 			}
 			CoPlayerX = SetBoundaryX(CoPlayerX);
 			CoPlayerX = SetBoundaryY(CoPlayerX);
-			if (wnd.KeyIsPressed('I')) {
-				Fire::Fire(CoPlayerX, CoPlayerY, 1);
+			if (KeyOb.KeyIsPressed('I')) {
+				FireOb.GetDeets(CoPlayerX, CoPlayerY, 1);
 			}
 		}
 		if (CoPlayerNum = 2) {
-			if (wnd.KeyIsPressed(0x57)) {
+			if (KeyOb.KeyIsPressed(0x57)) {
 				CoPlayerY = CoPlayerY - 1;
 			}
-			if (wnd.KeyIsPressed(0x53)) {
+			if (KeyOb.KeyIsPressed(0x53)) {
 				CoPlayerY = CoPlayerY + 1;
 			}
-			if (wnd.KeyIsPressed(0x41)) {
+			if (KeyOb.KeyIsPressed(0x41)) {
 				CoPlayerX = CoPlayerX - 1;
 			}
-			if (wnd.KeyIsPressed(0x44)) {
+			if (KeyOb.KeyIsPressed(0x44)) {
 				CoPlayerX = CoPlayerX + 1;
 			}
 			CoPlayerX = SetBoundaryX(CoPlayerX);
 			CoPlayerY = SetBoundaryY(CoPlayerY);
-			if (wnd.KeyIsPressed('T')) {
-				Fire::Fire(CoPlayerX, CoPlayerY, 2);
+			if (KeyOb.KeyIsPressed('T')) {
+				FireOb.GetDeets(CoPlayerX, CoPlayerY, 2);
 			}
 		}
 	}

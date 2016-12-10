@@ -1,11 +1,13 @@
 #include "Graphics.h"
+
 class Fire
 {
 public:
-	Fire(int GetLocX, int GetLocY, int GetPlayerNum);
-	~Fire();
+	Fire();
+	void GetDeets(int GetLocX, int GetLocY, int GetPlayerNum);
+	void Shoot(Graphics&gfx);
 private:
-	Graphics&gfx;
+
 	int GetPosX;
 	int GetPosY;
 	int bullet;

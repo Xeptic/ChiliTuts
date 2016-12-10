@@ -4,14 +4,16 @@
 class Control
 {
 public:
-	Control(int GetControlX,int GetControlY,int PlayerNum);
-	void KeyPresses();
+	Control();
+	void KeyPress(Keyboard& kbd);
+	void GetDeets(int GetControlX, int GetControlY, int PlayerNum);
 	int SetBoundaryX(int PosX);
 	int SetBoundaryY(int PosY);
 private:
 	int CoPlayerX;
 	int CoPlayerY;
 	int CoPlayerNum;
-	Keyboard wnd;
+	Keyboard KeyOb;
+	Fire FireOb;
 };
 
